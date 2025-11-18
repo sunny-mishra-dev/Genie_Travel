@@ -13,7 +13,7 @@ body {
 :root {
     --pm : #ff7e5f;
     --sc : #feb47b;
-    --normal : #4ecdc4;
+    --normal : #069f95;
     --tc : #fff;
     --bc : #1a1a1d;
 }
@@ -42,4 +42,61 @@ body {
 
 .nav-links a:hover {
     color: var(--normal);
+}
+
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(
+        to right,
+        var(--pm),
+        var(--sc)
+    );
+    color: var(--tc);
+}
+
+.hero .btn-primary {
+    padding: 12px 30px;
+    margin-top: 20px;
+    background-color: var(--normal);
+    color: var(--tc);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.hero .btn-primary:hover {
+    transform: scale(1.1);
+}
+
+.destinations{
+    padding: 60px 10%;
+    background-color: var(--tc);
+    text-align: center;
+}
+
+.destination-container{
+    display: grid;
+    grid-template-columns: repeat(auto,minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.destination-card{
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    color: var(--tc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+
 }
