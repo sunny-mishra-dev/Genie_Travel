@@ -127,3 +127,61 @@ body {
 .package-card:hover {
     transform: translateY(-10px);
 }
+
+.contactUs {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--bc);
+    color: var(--tc);
+}
+
+.contactUs .btn-secondary {
+    padding: 12px 30px;
+    margin-top: 20px;
+    background-color: var(--normal);
+    color: var(--tc);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Responsive media query */
+
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero {
+        padding: 80px 10px1;
+    }
+}
+
+@media (max-width: 480px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .destination-card{
+        font-size: 1.2rem;
+    }
+    .hero {
+        font-size: 1.5rem;
+    }
+    .package-list{
+        flex-direction: column;
+    }
+}
